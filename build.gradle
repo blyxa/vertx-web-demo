@@ -1,0 +1,20 @@
+plugins {
+  id 'scala'
+  id 'application'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.scala-lang:scala-library:2.13.1'
+  implementation 'io.vertx:vertx-web:3.9.0'
+  implementation 'org.apache.commons:commons-lang3:3.10'
+  testImplementation 'org.scalatest:scalatest_2.11:3.0.0'
+  testImplementation 'junit:junit:4.12'
+}
+application {
+  mainClassName = "acme.Main"
+}
+
